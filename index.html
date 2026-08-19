@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SG Han — Portfolio</title>
+  <meta name="description" content="SG Han — Industrial Designer &amp; Creative Technologist. Selected works." />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="site-logo" href="index.html">SG Han</a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+      <img class="icon icon-menu" src="assets/icons/menu.svg" alt="" />
+      <img class="icon icon-close" src="assets/icons/close.svg" alt="" />
+    </button>
+  </header>
+
+  <nav class="site-nav" data-site-nav>
+    <ul class="site-nav__list">
+      <li><a href="index.html" aria-current="page">Works</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#other">Other</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <aside class="side-rail">
+    <a href="index.html" aria-current="page">Works</a>
+    <span class="rail-divider"></span>
+    <a href="about.html">About</a>
+    <a href="index.html#other">Other</a>
+    <a href="#contact">Contact</a>
+  </aside>
+
+  <main class="works-scroller" data-works-root>
+    <!-- js/main.js가 js/works-data.js의 WORKS 배열을 읽어
+         이 안에 프로젝트 섹션을 자동으로 채웁니다. -->
+  </main>
+
+  <section class="other-section" id="other">
+    <h2 data-split-chars>Check my other works!</h2>
+    <a class="btn-pill" style="align-self:flex-start" href="https://github.com/seunggyunhan1215-maker" target="_blank" rel="noopener">
+      <span>View Project</span>
+      <img class="icon" src="assets/icons/arrow-right.svg" alt="" />
+    </a>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <p>SG Han · seunggyunhan1215@gmail.com</p>
+    <p>&copy; <span id="year"></span> SG Han. All rights reserved.</p>
+  </footer>
+
+  <script src="js/works-data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

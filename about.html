@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — SG Han</title>
+  <meta name="description" content="About SG Han — BFA Industrial Designer at Rhode Island School of Design." />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="site-logo" href="index.html">SG Han</a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+      <img class="icon icon-menu" src="assets/icons/menu.svg" alt="" />
+      <img class="icon icon-close" src="assets/icons/close.svg" alt="" />
+    </button>
+  </header>
+
+  <nav class="site-nav" data-site-nav>
+    <ul class="site-nav__list">
+      <li><a href="index.html">Works</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="index.html#other">Other</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <aside class="side-rail">
+    <a href="index.html">Works</a>
+    <a href="about.html" aria-current="page">About</a>
+    <span class="rail-divider"></span>
+    <a href="index.html#other">Other</a>
+    <a href="index.html#contact">Contact</a>
+  </aside>
+
+  <main class="about-hero">
+    <div class="about-intro" data-reveal>
+      <h1 data-split-chars>About SG Han</h1>
+      <p class="role">BFA Industrial Designer in Rhode Island School of Design</p>
+    </div>
+
+    <div class="about-grid" data-reveal>
+      <div class="about-text-card">
+        <p>
+          I'm <strong>SG Han</strong>, a designer and creative technologist
+          studying <strong>Industrial Design</strong> at <strong>RISD</strong>.
+          I design products where <strong>emotion meets logic</strong>,
+          combining systems thinking, emerging technology, and
+          <strong>human-centered design</strong> to create experiences that
+          are <strong>intuitive, meaningful, and lasting</strong>. I believe
+          great design isn't just about solving problems — it's about
+          creating products people genuinely want to live with.
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="assets/img/about-portrait.jpg" alt="Portrait of SG Han" loading="lazy" />
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <p>SG Han · seunggyunhan1215@gmail.com</p>
+    <p>&copy; <span id="year"></span> SG Han. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
