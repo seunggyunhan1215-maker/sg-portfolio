@@ -13,6 +13,8 @@
  *   heroPosition 'left' | 'right'  대표 이미지가 카드에서 어느 쪽에 배치될지
  *   summary   About Project 본문
  *   link      상세 페이지 경로. 아직 상세 페이지가 없으면 null
+ *   blobColor (선택) 마우스를 올렸을 때 나타나는 블러 블롭의 색상 (hex/css color).
+ *             생략하면 기본 accent 색상(--color-accent)이 사용됩니다.
  */
 const WORKS = [
   {
@@ -26,6 +28,7 @@ const WORKS = [
     summary:
       "Drayp is an innovative SaaS solution designed to empower businesses with smarter workflows — all within the convenience of a few clicks.",
     link: "works/5th-armored-brigade.html",
+    blobColor: "#0079be",
   },
   {
     id: "screen-notes-2",
@@ -38,6 +41,7 @@ const WORKS = [
     summary:
       "Drayp is an innovative SaaS solution designed to empower businesses with smarter workflows — all within the convenience of a few clicks.",
     link: null,
+    blobColor: "#2560fd",
   },
   // 03~07 추가 예정 — 아래처럼 객체를 추가하면 홈 화면에 자동으로 반영됩니다.
   // {
@@ -50,6 +54,7 @@ const WORKS = [
   //   heroPosition: "right",
   //   summary: "About project text...",
   //   link: "works/new-project.html",
+  //   blobColor: "#2560fd",
   // },
 ];
 
